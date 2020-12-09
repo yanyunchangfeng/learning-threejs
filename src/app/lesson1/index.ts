@@ -1,8 +1,7 @@
 import * as THREE from 'three';
 import { fromEvent } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
-const persCamera =  require("../../assets/img/camera.png");
-// import * as from '../../assets/img/yanyunchangfeng.png'
+import  persCamera from '../../assets/img/camera.png'
 let scene, camera, renderer, cube;
 const init = () => {
     scene = new THREE.Scene();
