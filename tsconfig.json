@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
         "moduleResolution": "node",
+        "rootDir": "src",
+        "baseUrl": "./",
         "allowSyntheticDefaultImports": true,
         "allowJs": true,
         "module": "esnext",
         "lib": ["es5", "es2015", "es2016","es2017","es2018" ,"dom", "esnext"],
-        "target": "esnext",
+        "target": "es5",
         "sourceMap": true,
         "experimentalDecorators": true
     },
-    "include": ["./src/**/*.ts"]
+    "include": ["./src/**/*"]
 }

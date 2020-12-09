@@ -8,8 +8,33 @@
 寓意：结合李白著名的边塞诗《关山月》取【燕云长风】—— 长风几万里，吹度玉门关。
 
 ## threejs 学习
+1. 场景 Scene
+-- 场景允许你在什么地方、摆放什么东西来交给three.js来渲染，这是你放置物体、灯光和摄像机的地方。
+* Scene()
+-- 创建一个新的场景对象。
+2. 透视相机（PerspectiveCamera）
+-- 这一摄像机使用perspective projection（透视投影）来进行投影。
+-- 这一投影模式被用来模拟人眼所看到的景象，它是3D场景的渲染中使用得最普遍的投影模式
+var camera = new THREE.PerspectiveCamera( 45, width / height, 1, 1000 );
+scene.add( camera );
+* 构造器
+PerspectiveCamera( fov : Number, aspect : Number, near : Number, far : Number )
+fov — 摄像机视锥体垂直视野角度
+aspect — 摄像机视锥体长宽比
+near — 摄像机视锥体近端面
+far — 摄像机视锥体远端面
+3. WebGLRenderer
+-- WebGL Render 用WebGL渲染出你精心制作的场景。
+* 构造器
+const renderer = new THREE.WebGLRenderer();
+
+<p align="center">
+    <img width="300" src="src/assets/img/camera.png">
+</p>
+这些参数一起定义了摄像机的viewing frustum（视锥体）。
 
 
+1.  [lesson1](src/app/lesson1/index.ts)
 ## Jest Unit 测试
 
 ### 安装

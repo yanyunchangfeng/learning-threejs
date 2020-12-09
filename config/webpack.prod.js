@@ -12,7 +12,7 @@ module.exports = merge(commonConfig, {
     entry: {
         app: path.resolve(process.cwd(), "src/index.ts"),
         // 将 第三方依赖(node_modules中的) 单独打包
-        // vendor: Object.keys(pkg.dependencies)
+        vendor: Object.keys(pkg.dependencies)
     },
     output:{
        path:path.join(process.cwd(), 'docs'),
